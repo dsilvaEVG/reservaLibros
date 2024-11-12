@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="exportar.css">
+        <title>Exportar</title>
+    </head>
+
+    <body>
+        
+        <header> 
+            <a href="https://fundacionloyola.com/vguadalupe/" target="_blank">
+                <img src="logoEVG.png" alt="">
+            </a>
+            <nav> <!-- Barra de navegacion-->
+                <a href="">Gestión</a>
+                <a href="">Info Reservas</a>
+                <a href="">Validación Sol.</a>
+                <a href="">Estadísticas</a>
+            </nav>
+        </header> 
+        
+        <main>
+            <div> <!-- Caja donde va la tabla-->
+                <img src="arrowBackSec.png" id="back"> <!-- Boton para volver atras-->
+                <h1>Nombre editorial</h1>
+                <form action="exportar.php" method="POST">
+                    
+                    <table> <!-- Tabla referente a los libros-->
+                        <tr> <!-- fila de encabezado-->
+                            <th>ISBN</th>
+                            <th>TÍTULO LIBRO</th>
+                            <th>CURSO</th>
+                            <th>CANT. RESERVA</th>
+                            <th>CANT. PEDIR</th>
+                        </tr>
+                        <tr> <!-- primera fila de datos-->
+                            <td class="isbn">123-4-56-789012-3</td>
+                            <td>Ciencias Naturales</td>
+                            <td>1º Bachillerato</td>
+                            <td>15</td>
+                            <td><input type="text" class="cantidad" name="pedido1" placeholder="Cantidad..."></td>
+                        </tr>
+                        <tr> <!-- segunda fila de datos-->
+                            <td class="isbn">123-4-56-789012-3</td>
+                            <td>Matemáticas</td>
+                            <td>2º Bachillerato</td>
+                            <td>10</td>
+                            <td><input type="text" class="cantidad" name="pedido2" placeholder="Cantidad..."></td>
+                        </tr>
+                        <tr> <!-- tercera fila de datos-->
+                            <td class="isbn">123-4-56-789012-3</td>
+                            <td>FOL</td>
+                            <td>GS DAW, GM ASIR...</td>
+                            <td>23</td>
+                            <td><input type="text" class="cantidad" name="pedido3" placeholder="Cantidad..."></td>
+                        </tr>
+                        <tr> <!-- cuarta fila de datos-->
+                            <td class="isbn">123-4-56-789012-3</td>
+                            <td>Inglés</td>
+                            <td>1º Bachillerato</td>
+                            <td>9</td>
+                            <td><input type="text" class="cantidad" name="pedido4" placeholder="Cantidad..."></td>
+                        </tr>
+                        <tr> <!-- quinta fila de datos-->
+                            <td class="isbn">123-4-56-789012-3</td>
+                            <td>Historia</td>
+                            <td>1º Bachillerato</td>
+                            <td>17</td>
+                            <td><input type="text" class="cantidad" name="pedido5" placeholder="Cantidad..."></td>
+                        </tr>
+                    </table> 
+                    
+                    <br/><br/>
+
+                    <input id="reset" type="reset" value="Reset">
+                    <input id="exportar" type="submit" value="Exportar a .pdf">
+                </form>
+            </div> 
+        </main>
+        
+        <footer>
+            <div>
+                Escuela Virgen de Guadalupe
+            </div>
+            <div>
+                Grupo 2
+            </div>
+        </footer>
+    </body>
+    </html>
