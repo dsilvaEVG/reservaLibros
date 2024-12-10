@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editorial: <?php echo $nomEditorial; ?></title> <!-- Indicamos el nombre de la editorial desde el objeto-->
+    <link rel="stylesheet" href="css/exportar.css">
+</head>
+<body>
+    <header>
+        <a href="https://fundacionloyola.com/vguadalupe/" target="_blank">
+            <img src="png/logoEVG.png" alt="Logo de la escuela">
+        </a>
+        <nav>
+            <a href="#">Gestión</a>
+            <a href="#">Info Reservas</a>
+            <a href="#">Validación Sol.</a>
+            <a href="#">Estadísticas</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="claseFormulario">
+            <h1>Selecciona una editorial</h1>
+            <article>
+                <form action="" method="POST">
+                    <label for="selectForm">Elige una editorial:</label>
+                    <select name="editorial" id="selectForm">
+                        <option value=""> - Elige... - </option>
+                        <option value="1"> - Anaya - </option>
+                        <option value="2"> - Oxford - </option>
+                        <option value="3"> - Santillana - </option>
+                    </select>
+                    <button id="enviar"><a href="tablaAnaya.html">Enviar</a></button>
+                </form>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div>Escuela Virgen de Guadalupe</div>
+        <div>Grupo 2</div>
+    </footer>
+</body>
+</html>

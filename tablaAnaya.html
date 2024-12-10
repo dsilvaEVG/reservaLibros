@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editorial: <?php echo $nomEditorial; ?></title> <!-- Indicamos el nombre de la editorial desde el objeto-->
+    <link rel="stylesheet" href="css/exportar.css">
+</head>
+    <body>
+        <header>
+            <a href="https://fundacionloyola.com/vguadalupe/" target="_blank">
+                <img src="png/logoEVG.png" alt="Logo de la escuela">
+            </a>
+            <nav>
+                <a href="#">Gestión</a>
+                <a href="#">Info Reservas</a>
+                <a href="#">Validación Sol.</a>
+                <a href="#">Estadísticas</a>
+            </nav>
+        </header>
+    
+        <main>
+            <div>
+                <a href="index.html">
+            <img src="png/arrowBackSec.png" id="back"> </a>
+        <h1><p>ANAYA</p></h1> 
+        <article>
+        <form action="" method="POST">
+            <table border="1">
+                <tr>
+                    <th>ISBN</th>
+                    <th>Título</th>
+                    <th>Curso</th>
+                    <th>Cantidad Reservada</th>
+                    <th>Cantidad a Pedir</th>
+                </tr>
+               
+                    <tr>
+                        <td>9788441522221</td>
+                        <td>Ciencias Naturales</td>
+                        <td>1º Bachillerato</td>
+                        <td>1</td>
+                        <td>
+                            <input type="number" name="9788441522221" value="0" min="0"> <!-- Input al final de cada fila. EL nombre que identifica la celda es el ISBN de dicho libro-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9788441522332</td>
+                        <td>Matemáticas 1º Bachillerato</td>
+                        <td>1º Bachillerato</td>
+                        <td>2</td>
+                        <td>
+                            <input type="number" name="9788441522332" value="0" min="0"> <!-- Input al final de cada fila. EL nombre que identifica la celda es el ISBN de dicho libro-->
+                        </td>
+                    </tr>
+            </table>
+            <button id="enviar"><a href="pedidoAnaya.html">Enviar</a></button>
+        </form>
+       </article>
+            </div>
+        </main>
